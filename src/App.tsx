@@ -1,11 +1,19 @@
 import React from 'react';
-import './App.css';
-import 'tailwindcss/tailwind.css';
 import { Provider } from 'react-redux';
 import store from './store';
+import { ThemeProvider } from '@material-ui/core/styles';
+import AppContainer from './loyouts/AppContainer';
+
+import { BrowserRouter as Router } from 'react-router-dom';
+import './App.css';
+import theme from './configs/theme';
 function App() {
   return <Provider store={store}>
-    <div className="App"></div>;
+    <Router>
+      <ThemeProvider theme={theme}>
+        <AppContainer />
+      </ThemeProvider>
+    </Router>
   </Provider>; 
 }
 

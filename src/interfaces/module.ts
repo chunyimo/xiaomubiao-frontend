@@ -5,6 +5,8 @@ export interface IModule {
   view: ReactNode;
   path: string;
   routeName: string;
+  showLink: boolean;
+  logo?: ReactNode;
   name?: string;
   reduer: Reducer<any, any>;
   saga: () => void;
