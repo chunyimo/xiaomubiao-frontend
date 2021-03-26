@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme: ICTheme) => ({
     alignItems: 'center',
     fontSize: '2.4rem',
     '&:hover': {
-      color: '#ff5418',
+      color: theme.default.secondColor,
       fontSize: '2.8rem',
     },
   },

@@ -3,7 +3,8 @@ const theme = {
   ...createMuiTheme(),
   default: {
     firstColor: '#050b13',
-    secondColor: '#ffffff',
+    secondColor: '#fe5418',
+    thirdColor: '#ffffff',
   }
 };
 
