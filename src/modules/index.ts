@@ -1,5 +1,5 @@
 import { IModules } from '../interfaces/module';
-import DashboardModule from './Dashboard';
+import DashboardModule from './Dashboard/index';
 
 const modules: IModules = [
   DashboardModule
