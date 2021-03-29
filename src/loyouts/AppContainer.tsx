@@ -4,6 +4,7 @@ import { makeStyles, Theme } from '@material-ui/core/styles';
 import ICTheme from '../interfaces/theme';
 import clsx from 'clsx';
 import Logo from './Logo';
+import Content from './Content';
 export interface IAppContainerProps {
   children?: ReactNode;
 }
@@ -35,7 +36,9 @@ const AppContainer: React.FC<IAppContainerProps> = (props) => {
         <Logo />
         <NavBar/>
       </div>
-      <div className={clsx(PREFIX, classes.right)}></div>
+      <div className={clsx(PREFIX, classes.right)}>
+        <Content />
+      </div>
     </div>
   );
 };
