@@ -5,3 +5,14 @@ div {
 .App {
   text-align: center;
 }
+
+div::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+  background-color: rgba(145, 158, 171, 0.24);
+}
+div::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(99, 115, 129, 0.48);
+}
