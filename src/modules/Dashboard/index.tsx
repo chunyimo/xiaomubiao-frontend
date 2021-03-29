@@ -10,7 +10,7 @@ const DashboardModule: IModule ={
   showLink: true,
   logo: <DashboardRoundedIcon />,
   name: 'dashboard',
-  view: Dashboard,
+  view: <Dashboard />,
   reduer: reducer,
   saga: saga,
 };
