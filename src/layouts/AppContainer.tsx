@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import NavBar from './NavBar';
-import { makeStyles, Theme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import ICTheme from '../interfaces/theme';
 import clsx from 'clsx';
 import Logo from './Logo';
@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme: ICTheme) => ({
     display: 'flex',
     flexDirection: 'column',
     flex: '0 0 3.2rem',
+    visibility: 'hidden'
   },
   right: {
     flex: '1',
